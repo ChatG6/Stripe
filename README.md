@@ -1,1 +1,1 @@
-## Stripr - G6 - Test - Project
+## Stripe - G6 - Test - Project
