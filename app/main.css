@@ -1,0 +1,130 @@
+/* ROOT */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  width: 100%;
+  height: 100vh;
+  --dark-bg-hed:#1a1919;
+  --dark-bg-body:#141313;
+  --dark-bg-hed-hov:#212020;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color:var(--dark-bg-body);
+  color:#fff;
+  font-family: monospace;
+}
+/* Header Component */
+header {
+  background-color: var(--dark-bg-hed);
+  width: 100%;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  align-items: center;
+}
+header a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.6;
+  padding: 10px;
+  border-radius: 2px;
+  transition: 0.1s ease-in-out;
+}
+header > a:hover{
+  opacity: 1;
+  background-color: var(--dark-bg-hed-hov);
+}
+/* Home Page */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main > h1{
+  font-size: 50px;
+}
+/* Pricing Page */
+ul{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+  width: 100%;
+  border: 1px solid #fff ;
+  padding:1rem;
+}
+
+ul > li{
+  font-size: 20px;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 1rem;
+  gap: 5px;
+  opacity: 0.6;
+  
+}
+ul > li:hover{
+opacity: 1;
+}
+ul > li h1{
+  font-size: 50px;
+  color:yellow;
+}
+.page{
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.page h1{
+  width:100%;
+  text-align: center;
+  font-size: 30px;
+}
+.features{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.features p{
+  text-wrap:pretty;
+  font-size: 1rem;
+  font-weight:600 ;
+}
+.features .not_av_fet{
+  color:red;
+}
+.features .av_fet{
+  color:#00ff00;
+}
+.subs_btn{
+  text-decoration: none;
+  color:#fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 2px 2px 2px;
+  transition: 0.15s ease-in-out;
+}
+.subs_btn:hover{
+  background-color: #fff;
+  color:#000;
+}
